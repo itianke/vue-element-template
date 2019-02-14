@@ -1,0 +1,52 @@
+@import "src/style/base/variables";
+
+$hover-bg: darken(#fff, 5%) !important;
+
+.el-submenu__title {
+    .svg-icon {
+        fill: #333;
+    }
+
+    &:hover {
+        background-color: $hover-bg;
+    }
+}
+
+.el-menu-item {
+    .svg-icon {
+        fill: #333;
+    }
+
+    &.is-active {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 7px;
+            bottom: 7px;
+            width: 3px;
+            background: $color-main;
+        }
+
+        .svg-icon {
+            fill: $color-main;
+        }
+    }
+
+    &:hover {
+        background-color: $hover-bg;
+    }
+}
+
+.el-submenu {
+    .el-menu-item {
+        background-color: #fff !important;
+
+        &:hover {
+            background-color: $hover-bg;
+        }
+    }
+}
+
