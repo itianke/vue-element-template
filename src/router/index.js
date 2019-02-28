@@ -4,8 +4,6 @@
 */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import store from 'store'
-import config from 'src/common/config'
 
 // import modules
 import error from './modules/error'
@@ -31,7 +29,6 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
     next()
-
     // remove loading
     let $loading = document.querySelector('#appPageLoading')
     if ($loading) {
