@@ -49,6 +49,12 @@ export default class BaseForm extends Vue {
         ]
     }
 
+
+    changeSideBar() {
+        console.log(this)
+        this.$store.dispatch('common/toggleSideBar', true)
+    }
+
     changeSelect(val) {
         console.log(val)
     }

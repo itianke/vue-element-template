@@ -1,7 +1,7 @@
 <template>
     <el-container>
         <el-header>
-            <nav-bar></nav-bar>
+            <!-- <nav-bar></nav-bar> -->
             <header-bar></header-bar>
         </el-header>
         <el-container class="app-wrapper">
